@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; 
+}
+
+#navbar {
+  background-color: #a4d7a4; 
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; 
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; 
+}
+
+#navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  background-color: #8cbf8c; 
+  color: black;
+}
+
+#footer {
+  background-color: #a4d7a4; 
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  gap: 20px; 
+}
+
+
+#homepageImage {
+  max-width: 20%;
+  height: auto; 
+}
+
+.login-page, .register-page, .create-post-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+}
+
+.login-page form, .register-page form, .create-post-page form {
+  width: 100%; 
+  max-width: 400px; 
+}
+
+.login-page input, .register-page input, .create-post-page input,
+.login-page textarea, .register-page textarea, .create-post-page textarea {
+  width: 100%; 
+  padding: 10px; 
+  margin: 8px 0; 
+  box-sizing: border-box; 
+  border: 2px solid #a4d7a4; 
+  border-radius: 4px; 
+}
+
+
+.login-page button, .register-page button, .create-post-page button {
+  width: 100%; 
+  padding: 10px; 
+  background-color: #a4d7a4; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  margin-top: 10px; 
+}
+
+.login-page button:hover, .register-page button:hover, .create-post-page button:hover {
+  background-color: #8cbf8c; 
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px; 
+  align-items: center;
+}
+
+.basic-info {
+  text-align: left;
+}
+
+.about-info {
+  width: 50%;
+  border: none; 
+  background: none; 
+  padding: 0; 
+  margin: 0;
+}
+
+#about {
+  width: 100%; 
+  height: 150px; 
+  border: 2px solid #a4d7a4; 
+  background-color: transparent; 
+  color: inherit; 
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-actions button {
+  padding: 10px 20px;
+  background-color: #a4d7a4; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-actions button:hover {
+  background-color: #8cbf8c;
+}
+
+#profileForm {
+  border: none; 
+  background-color: transparent; 
+}
+.profile-actions button, #profileForm button {
+  padding: 10px 20px; 
+  background-color: #a4d7a4; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  width: auto; 
+  font-size: inherit;
+}
+.profile-actions button:hover, #profileForm button:hover {
+  background-color: #8cbf8c; 
+}
+
+#postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 20px; 
+  align-items: center; 
+  margin-bottom: 20px; 
+  border-radius: 8px; 
+  border: 1px solid #d3d3d3; 
+  width: 100%; 
+  max-width: 600px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  background-color: white; 
+}
+
+.post {
+  border: 1px solid #d3d3d3; 
+  border-radius: 8px; 
+  width: 100%; 
+  max-width: 600px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 15px; 
+  background-color: white; 
+  margin-bottom: 20px; 
+}
+
+.posts-list-page button {
+  padding: 10px 20px; 
+  background-color: #a4d7a4; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  margin: 5px; 
+}
+
+.posts-list-page button:hover {
+  background-color: #8cbf8c; 
+}
+
+.posts-list-page button[data-link]:hover {
+  text-decoration: underline; 
+}
+
+.posts-buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  padding-top: 20px; 
+}
+.posts-list-page {
+  text-align: center; 
+}
+.posts-header {
+  text-align: center; 
+}
+
+
+.posts-header {
+  display: flex;
+  justify-content: center; 
+  width: 100%; 
+}

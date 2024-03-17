@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To My Site</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script/fetch.js" defer></script>
+    <script src="./script/templateLoader.js" defer></script>
+    <script src="./script/main.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <ul>
+            <li><a data-link href="#home">Home</a></li>
+            <li><a data-link href="#postsList">Posts</a></li>
+            <li><a data-link href="#profile">Profile</a></li>
+            <li><a data-link href="#login">Login</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Destination for dynamically loaded content -->
+    <div id="divContent"></div>
+
+    <!-- Template for home page content -->
+    <template id="tlHome">
+        <div class="home-page">
+            <h2>share your opinions</h2>
+            <img src="images/thumbs_down.jpg" alt="Description of Image" id="homepageImage">
+            <p>
+            <p>
+                share your unpopular opinions here!
+            </p>
+        </div>
+    </template>
+
+    <template id="tlLogin">
+        <div class="login-page">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a data-link href="#register">Register here</a>.</p>
+        </div>
+    </template>
+
+    <template id="tlPostsList">
+        <div class="posts-list-page">
+            <div class="posts-header">
+                <h2>All Posts</h2>
+            </div>
+            <div id="postsContainer">
+                <!-- Posts will be dynamically inserted here -->
+            </div>
+            <div class="posts-buttons">
+                <button data-link href="#home">Back to Home</button>
+                <button data-link href="#createPost">Create Post</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="tlProfile">
+        <div class="profile-page">
+            <div class="profile-info">
+                <div class="basic-info">
+                    <h2>Profile</h2>
+                    <p>Username: <span class="profile-username">Username Placeholder</span></p>
+                    <p>Email: <span class="profile-email">Email Placeholder</span></p>
+                </div>
+                <form id="profileForm" class="about-info">
+                    <textarea id="about" name="about" placeholder="About Me"></textarea>
+                    <button type="submit">Update Profile</button>
+                </form>
+            </div>
+            <div class="profile-actions">
+                <button data-link href="#home">Back to Home</button>
+                <button id="deleteAccountBtn">Delete Account</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="tlRegister">
+        <div class="register-page">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="username" placeholder="Username">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button id="createUserButton">Register</button>
+            </form>
+            <p>Already have an account? <a data-link href="#login">Login here</a>.</p>
+        </div>
+    </template>
+
+    <template id="tlCreatePost">
+    <div class="create-post-page">
+        <h2>Create New Post</h2>
+        <form id="createPostForm">
+            <input type="text" id="postTitle" name="title" placeholder="Title">
+            <textarea id="postContent" name="content" placeholder="Write your post content here..."></textarea>
+            <button type="submit">Submit Post</button>
+        </form>
+        <button data-link href="#postsList">Back to Posts</button>
+    </div>
+</template>
+    
+    
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>This is just placeholder text for the footer.</p>
+    </footer>
+</body>
+</html>
